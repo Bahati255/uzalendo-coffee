@@ -25,7 +25,40 @@
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
+<<<<<<< HEAD
 <?php include "header.php"?>
+=======
+	<?php include "header.php"?>
+<!--http://mrwallpapers.com/wp-content/uploads/2018/10/wall-leaves-wooden-background-images-hd.jpg-->
+<div>
+<div class="form" id="login">
+	<div class="box">
+	<h3>LOGIN</h3>
+	<div class="social-container">
+		<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+	</div>
+	<div>
+		<?php
+			function test_input($data)
+			{
+				$data=trim($data);
+				$data=stripcslashes($data);
+				$data=htmlspecialchars($data);
+				return $data;
+			}
+			if(isset($_POST['login']))
+			{
+				session_start();
+				$username=$password="";
+				if($_SERVER["REQUEST_METHOD"] == "POST")
+				{
+					$username = test_input($_POST['Username']);
+					$password = test_input($_POST['Password']);
+					//echo $username,"<br>";
+					//echo $password;
+>>>>>>> ee1369a2bdbde68ae8cd8baf528dcfac15644954
 
 
 <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom ">

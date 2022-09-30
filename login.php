@@ -1,3 +1,34 @@
+<?php
+
+include 'config.php';
+
+session_start();
+
+error_reporting(0);
+
+if (isset($_SESSION['username'])) {
+    header("Location: index.php");
+}
+
+if (isset($_POST['login'])) {
+	$email = $_POST['email'];
+	$password = md5($_POST['password']);
+
+	$sql = "SELECT * FROM registeredusers WHERE email='$email' AND userpassword='$password'";
+	$result = mysqli_query($conn, $sql);
+	if ($result->num_rows > 0) {
+		$row = mysqli_fetch_assoc($result);
+        echo 'Login success';
+		//$_SESSION['username'] = $row['username'];
+		header("Location: dashboard.php");
+	} else {
+		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
+	}
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +64,8 @@
             <h1 class="display-3 text-primary mt-3 ">Welcome Back</h1>
             <h1 class="text-white mb-3 ">Log in to enjoy Special Offers and Discounts</h1>
             <h4 class="text-white font-weight-normal mb-4 pb-3 ">Only for registered members </h4>
-            <form class="" action="" method="post">
+            
+            <form class="" action="" method="post" autocomplete="off">
 			
       <div class="form-group">
 				<label for="email"></label>
@@ -49,7 +81,7 @@
       
 
 		   <div class="container">
-				<button type="submit" id="form-submit" name="submit" class="btn btn-dark">
+				<button type="submit" id="form-submit" name="login" class="btn btn-dark">
 					LOG IN!
 				</button>
 				

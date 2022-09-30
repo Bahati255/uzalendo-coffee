@@ -277,53 +277,53 @@
     <!-- Reservation End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5 ">
-        <div class="container ">
-            <div class="section-title ">
-                <h4 class="text-primary text-uppercase " style="letter-spacing: 5px; ">Testimonial</h4>
-                <h1 class="display-4 ">Our Clients Say</h1>
+   <!-- Testimonial Start -->
+   <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
+                <h1 class="display-4">Our Clients Say</h1>
             </div>
-            <div class="owl-carousel testimonial-carousel ">
-                <div class="testimonial-item ">
-                    <div class="d-flex align-items-center mb-3 ">
-                        <img class="img-fluid " src="img/testimonial-1.jpg " alt=" ">
-                        <div class="ml-3 ">
-                            <h4>Client Name</h4>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/nesta.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Shonarwa Koki</h4>
                             <i>Profession</i>
                         </div>
                     </div>
-                    <p class="m-0 ">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                    <p class="m-0">"Food was amazing and service was excellent."</p>
                 </div>
-                <div class="testimonial-item ">
-                    <div class="d-flex align-items-center mb-3 ">
-                        <img class="img-fluid " src="img/testimonial-2.jpg " alt=" ">
-                        <div class="ml-3 ">
-                            <h4>Client Name</h4>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/nesta2.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Beartice Wakesho</h4>
                             <i>Profession</i>
                         </div>
                     </div>
-                    <p class="m-0 ">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                    <p class="m-0">"the ambience is amazing and service is outstanding"</p>
                 </div>
-                <div class="testimonial-item ">
-                    <div class="d-flex align-items-center mb-3 ">
-                        <img class="img-fluid " src="img/testimonial-3.jpg " alt=" ">
-                        <div class="ml-3 ">
-                            <h4>Client Name</h4>
-                            <i>Profession</i>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/nesta3.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Clinton Wahu</h4>
+                            <i>Bussinessman</i>
                         </div>
                     </div>
-                    <p class="m-0 ">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                    <p class="m-0">So many reasons t go back there</p>
                 </div>
-                <div class="testimonial-item ">
-                    <div class="d-flex align-items-center mb-3 ">
-                        <img class="img-fluid " src="img/testimonial-4.jpg " alt=" ">
-                        <div class="ml-3 ">
-                            <h4>Client Name</h4>
-                            <i>Profession</i>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/nesta4.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Godfrey Nesta</h4>
+                            <i>Student</i>
                         </div>
                     </div>
-                    <p class="m-0 ">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                    <p class="m-0">"I loved it there"</p>
                 </div>
             </div>
         </div>

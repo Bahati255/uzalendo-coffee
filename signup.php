@@ -23,7 +23,7 @@
         
         else {
             if ($password === $confirmpassword) {
-                $sql = "INSERT INTO signup (firstname,lastname,email,phonenumber,county,password) VALUES ('{$firstname}', '{$lastname}', '{$email}', '{$phone}', '{$county}','{$password}')";
+                $sql = "INSERT INTO signup (firstname,lastname,email,phonenumber,county,userpassword) VALUES ('{$firstname}', '{$lastname}', '{$email}', '{$phone}', '{$county}','{$password}')";
                 $result = mysqli_query($conn, $sql);
 
                 if ($result) {

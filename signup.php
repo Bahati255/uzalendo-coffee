@@ -1,19 +1,18 @@
 <?php
     session_start();
     if (isset($_SESSION["SESSION_EMAIL"])) {
-        header("Location: index.php");
+        header("Location: dashboard.php");
     }
 
-    if (isset($_POST["submit"])) {
+    if (isset($_POST["submit"])) { 
         include 'config.php';
 
         $firstname = mysqli_real_escape_string($conn, $_POST["firstname"]);
         $lastname = mysqli_real_escape_string($conn, $_POST["lastname"]);
-
         $email = mysqli_real_escape_string($conn, $_POST["email"]);
         $phonenumber = mysqli_real_escape_string($conn, $_POST["phonenumber"]);
         $county = mysqli_real_escape_string($conn, $_POST["county"]);
-        $password = mysqli_real_escape_string($conn, md5($_POST["password"]));
+        $userpassword = mysqli_real_escape_string($conn, md5($_POST["userpassword"]));
         $confirmpassword = mysqli_real_escape_string($conn, md5($_POST["confirmpassword"]));
       
 
@@ -22,8 +21,8 @@
         }
         
         else {
-            if ($password === $confirmpassword) {
-                $sql = "INSERT INTO signup (firstname,lastname,email,phonenumber,county,userpassword) VALUES ('{$firstname}', '{$lastname}', '{$email}', '{$phone}', '{$county}','{$password}')";
+            if ($userpassword === $confirmpassword) {
+                $sql = "INSERT INTO signup (firstname,lastname,email,phonenumber,county,userpassword) VALUES ('{$firstname}', '{$lastname}', '{$email}', '{$phonenumber}', '{$county}','{$userpassword}')";
                 $result = mysqli_query($conn, $sql);
 
                 if ($result) {
@@ -33,7 +32,7 @@
                      echo "<script>alert('Success account created.');</script>";
 
                     //if result is successfull navigate to dashboard page
-                    header("Location: login.php");
+                    header("Location: dashboard.php");
 
                 }else {
                     echo "<script>Error: ".$sql.mysqli_error($conn)."</script>";
